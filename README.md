@@ -1,3 +1,92 @@
+🔢 Sorting Algorithms Benchmark (Menu-Driven) in C
+📖 Project Overview
+
+This project is a C console application that demonstrates and benchmarks multiple classic sorting algorithms on a large array of integers.
+The user can initialize the array with random values, print it, choose a sorting algorithm from a menu, and measure execution time using clock().
+
+It is designed for learning algorithm behavior, complexity, and practical runtime differences.
+
+✅ Features
+
+✅ Menu-driven CLI (initialize / print / sort / exit)
+✅ Random array generation (populate_arr)
+✅ Sorting algorithm selection menu
+✅ Benchmarking macro (MEASURE_TIME) to measure execution time
+✅ Implements 6 sorting algorithms:
+
+Selection Sort
+
+Insertion Sort
+
+Bubble Sort
+
+Merge Sort
+
+Quick Sort (random pivot)
+
+Heap Sort (max-heap)
+
+🧠 Algorithms Implemented
+1️⃣ Selection Sort
+
+Repeatedly selects the smallest element and swaps it into position
+
+Time: O(n²)
+
+Space: O(1)
+
+2️⃣ Insertion Sort
+
+Builds sorted portion incrementally by inserting elements into the correct position
+
+Time: O(n²) (best case O(n) when nearly sorted)
+
+Space: O(1)
+
+3️⃣ Bubble Sort
+
+Repeatedly swaps adjacent out-of-order elements
+
+Time: O(n²)
+
+Space: O(1)
+
+4️⃣ Merge Sort
+
+Divide-and-conquer; splits array and merges sorted halves
+
+Time: O(n log n)
+
+Space: O(n) (temporary buffer)
+
+5️⃣ Quick Sort (Random Pivot)
+
+Partition-based divide-and-conquer using a random pivot
+
+Average: O(n log n)
+
+Worst-case: O(n²)
+
+Space: recursion stack (≈ O(log n) average)
+
+6️⃣ Heap Sort (Max-Heap)
+
+Builds a max-heap and extracts the max repeatedly
+
+Time: O(n log n)
+
+Space: O(1)
+
+⚙️ Array Size
+
+The program uses a fixed size:
+
+#define ARRAY_SIZE 100000
+🏗️ Project Structure
+.
+├── main.c
+└── README.md
+
 Problema: 
 1.1 Să se elaboreze un program ce va aloca dinamic un tablou unidimensional de numere întregi și va implementa următoarele funcții, funcțiile vor fi organizate sub forma unui meniu:
 1.	Inițializarea tabloului cu numere aleatorii;
